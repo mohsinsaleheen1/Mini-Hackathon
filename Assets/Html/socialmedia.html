@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- font-awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../Css/socialnedia.css" />
+    <link rel="stylesheet" href="../Css/responsive.css" />
+  </head>
+  <body>
+    <div class="main">
+      <header>
+        <div class="logo">
+          <h1>Social Media APP<span></span></h1>
+        </div>
+        <div class="userdetail">
+          <p><i class="fa-solid fa-circle-user"></i><span id="user"></span></p>
+          <button onclick="logOut()">Logout</button>
+        </div>
+      </header>
+      <div class="blogs">
+        <div class="search">
+          <input
+            type="text"
+            id="blogSearch"
+            placeholder="Search blogs..."
+            oninput="searchBlogs()"
+          />
+        </div>
+        <div class="createblog">
+          <button onclick="createBlog()" class="blogbtn" id="Cblog">
+            Create Post
+          </button>
+          <button onclick="viewBlogs()" class="blogbtn" id="Vblog">
+            View Posts
+          </button>
+        </div>
+        <div class="cards" id="Cards"></div>
+      </div>
+    </div>
+    <!-- Create Form Model -->
+    <div class="hide" id="blog">
+      <div class="form">
+        <div class="close">
+          <h1>Create Your Post</h1>
+          <i class="fa-solid fa-xmark" onclick="closebtn()"></i>
+        </div>
+        <form action="" onsubmit="submitBlog(event)">
+          <input
+            type="text"
+            id="title"
+            name="title"
+            placeholder="Post title"
+            required
+          />
+          <input
+            type="text"
+            id="author"
+            name="author"
+            placeholder="User Name"
+            required
+          />
+          <textarea
+            id="content"
+            name="content"
+            placeholder="Post content"
+            required
+          ></textarea>
+          <label for="img">Enter image URL:</label>
+          <input type="input" id="image" name="img" />
+          <input type="hidden" id="updateIndex" />
+          <div class="btn">
+            <button type="submit">Create Post</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Posts -->
+
+    <script src="../Javascript/app.js"></script>
+    <script>
+      let loggedInUser = localStorage.getItem("loggedInUser");
+      if (loggedInUser) {
+        document.getElementById("user").textContent = loggedInUser;
+      }
+    </script>
+  </body>
+</html>

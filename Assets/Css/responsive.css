@@ -1,0 +1,116 @@
+@media screen and (max-width: 768px) {
+  .logo h1 {
+    font-size: 30px;
+  }
+
+  .main header button {
+    font-size: 11px;
+    padding: 9px 36px;
+  }
+
+  .main header .userdetail p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 427px) {
+  .logo h1 {
+    font-size: 20px;
+  }
+
+  .main header .userdetail p {
+    display: none;
+  }
+  .main header {
+    background-color: aqua;
+  }
+  .main header button {
+    font-size: 11px;
+    padding: 9px 28px;
+  }
+
+  .createblog button {
+    font-size: 11px;
+    padding: 11px 28px;
+  }
+  .model .form form {
+    width: 300px;
+  }
+  .model .form .close h1 {
+    font-size: 22px;
+  }
+  .model .form .close i {
+    font-size: 22px;
+  }
+  .model .form form input {
+    background-color: #eee;
+    border: none;
+    padding: 10px 13px;
+    margin: 5px 0;
+  }
+  .model .form form .btn button {
+    font-size: 10px;
+    padding: 10px 30px;
+    margin-top: 15px;
+  }
+  .blogs .card {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 377px) {
+  .main header {
+    padding: 20px 20px;
+  }
+
+  .logo h1 {
+    font-size: 16px;
+  }
+
+  .createblog {
+    gap: 30px;
+  }
+
+  .createblog button {
+    font-size: 11px;
+    padding: 11px 24px;
+  }
+  .blogs .card {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .logo h1 {
+    font-size: 16px;
+  }
+  .main header button {
+    font-size: 9px;
+    padding: 9px 26px;
+  }
+  .createblog button {
+    font-size: 8px;
+    padding: 11px 20px;
+  }
+  .model .form form {
+    width: 250px;
+  }
+  .model .form form input {
+    padding: 8px 13px;
+  }
+  .model .form form .btn button {
+    padding: 8px 20px;
+  }
+  .blogs .card {
+    width: 274px;
+  }
+  .blogs .card .iamge {
+    height: 230px;
+  }
+  .blogs .card .title h1 {
+    font-size: 18px;
+  }
+  .blogs .card .content p {
+    font-size: 12px;
+  }
+}

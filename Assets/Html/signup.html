@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../Css/form.css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form action="#" onsubmit="sinupbtn(event)">
+          <h1>Create Account</h1>
+          <input type="text" placeholder="Name" id="sname" required />
+          <input type="email" placeholder="Email" id="semail" required />
+          <input type="password" placeholder="Password" id="spass" required />
+          <button>Sign Up</button>
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form action="#" onsubmit="signInbtn(event)">
+          <h1>Sign in</h1>
+          <input type="email" placeholder="Email" id="loname" required />
+          <input type="password" placeholder="Password" id="lopass" required />
+          <button>Sign In</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Welcome Back!</h1>
+            <p>
+              To keep connected with us please login with your personal info
+            </p>
+            <button class="ghost" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>Hello, Friend!</h1>
+            <p>Enter your personal details and start journey with us</p>
+            <button class="ghost" id="signUp">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JS Custom -->
+    <script src="../Javascript/app.js"></script>
+  </body>
+</html>
