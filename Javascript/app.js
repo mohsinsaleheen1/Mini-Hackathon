@@ -224,3 +224,6 @@ function increment(index) {
 }
 
 const nameaaa = window.addEventListener("load", viewBlogs());
+function logOut() {
+  window.location.href = "../Html/signup.html";
+}
